@@ -26,6 +26,7 @@ body {
 .list {
   list-style: none;
 }
+
 h1,
 h2,
 h3,
@@ -44,6 +45,8 @@ ul {
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /* .SECTION STYLES */
 .section {
@@ -58,12 +61,18 @@ ul {
   border-width: 1px;
   border-bottom-style: solid;
   border-color: #ececec;
-  height: 80px;
 }
 .current {
   color: var(--accent-color);
 }
+.header-content {
+  display: flex;
+  justify-content: center;
 
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
 /* logo */
 .logo-link:hover,
 .logo-link:focus {
@@ -81,18 +90,16 @@ ul {
 }
 
 .logo-section {
-  margin-left: 215px;
   color: var(--accent-color);
 }
 
 /* Navbar */
 .navbar {
-  justify-content: flex-start;
   display: flex;
   align-items: center;
 }
 .navbar-list {
-  padding-left: 50px;
+  margin-left: 50px;
   display: flex;
 }
 .navbar-list-items:hover {
@@ -119,33 +126,25 @@ ul {
   color: var(--accent-color);
 }
 .feedback-list {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: flex;
 }
 .navbar-feedback {
   margin-left: 50px;
- margin-right: 25px;
+  margin-right: 25px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  margin-right: 0px;
   color: var(--second-text-color);
 }
 
 .navbar-feedback:first-child {
   margin-left: 331px;
 }
-.navbar-feedback:last-child
-{
-  padding-right: 0px;
-}
-.navbar-link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
+
 .navbar-link:focus {
   color: var(--accent-color);
 }
@@ -226,10 +225,8 @@ ul {
   padding-left: 0px;
 }
 .about-section {
-  padding-left: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   font-family: 'Roboto';
-  width: 270px;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -268,14 +265,14 @@ ul {
 .section-photo {
   display: block;
 
-  padding-left: 30px;
-  padding-top: 50px;
+  margin-left: 30px;
+  margin-top: 50px;
 }
 .section-photo:first-child {
-  padding-left: 0px;
+  margin-left: 0px;
 }
 /* Team */
-.team {
+.team-section {
   background-color: var(--bg-light-clr);
 }
 
@@ -292,16 +289,16 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.team-people-list {
-  margin-top: -5px;
+.activity {
+  padding-left: 60px;
   padding-top: 30px;
+}
+.team-people-list {
   padding-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
-  text-align: center;
   letter-spacing: 0.03em;
-  width: 270px;
   color: var(--main-text-color);
 }
 .team-person-title:first-child {
@@ -311,7 +308,6 @@ ul {
   margin-left: 30px;
   font-size: 16px;
   line-height: calc(19 / 16);
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -323,7 +319,6 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: calc(19 / 16);
-  text-align: center;
   letter-spacing: 0.03em;
 
   color: #757575;
@@ -343,7 +338,6 @@ ul {
 }
 
 .footer-logo {
-  margin-left: 215px;
   display: inline-block;
   padding-top: 60px;
   font-family: 'Raleway';
@@ -357,7 +351,6 @@ ul {
   padding-top: 20px;
 }
 .ardess-position {
-  margin-left: 215px;
   font-family: 'Roboto';
   font-style: normal;
   font-size: 14px;
@@ -367,7 +360,6 @@ ul {
 }
 
 .footer-feedback {
-  margin-left: 215px;
   font-family: 'Roboto';
   font-style: normal;
   font-size: 14px;
@@ -405,9 +397,9 @@ ul {
 
 .filtr-button {
   padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 22px;
-    padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
   border-color: transparent;
   background: #f5f4fa;
   border-radius: 4px;
@@ -449,9 +441,6 @@ ul {
 }
 
 /* Project list */
-.project-fhoto {
-  width: 370px;
-}
 .project-list {
   display: flex;
   gap: 30px;
@@ -460,18 +449,19 @@ ul {
 
   margin-top: 50px;
 }
-
-.filtr-items {
+.filtr-container {
+  padding-top: 20px;
+  padding-left: 24px;
   border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .project-list-title {
-  text-align: left;
+  display: inline-block;
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
-  padding-top: 20px;
   color: var(--main-text-color);
 }
 
