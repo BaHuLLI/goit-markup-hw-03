@@ -70,8 +70,8 @@ ul {
   justify-content: center;
 
   align-items: center;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 /* logo */
 .logo-link:hover,
@@ -99,7 +99,7 @@ ul {
   align-items: center;
 }
 .navbar-list {
-  margin-left: 50px;
+  margin-left: 93px;
   display: flex;
 }
 .navbar-list-items:hover {
@@ -119,9 +119,7 @@ ul {
 .navbar-list-items:last-child {
   margin-right: 0px;
 }
-.navbar-list-items:first-child {
-  margin-left: 93px;
-}
+
 .navbar-feedback:hover {
   color: var(--accent-color);
 }
@@ -247,9 +245,14 @@ ul {
 }
 /* What are we doing */
 
+.what-doing {
+  padding-top: 0px;
+}
 /* section-list */
 .section-list {
   display: flex;
+
+  margin-top: 50px;
 }
 
 .section-title {
@@ -263,13 +266,11 @@ ul {
 }
 
 .section-photo {
+  padding-right: 30px;
   display: block;
-
-  margin-left: 30px;
-  margin-top: 50px;
 }
-.section-photo:first-child {
-  margin-left: 0px;
+.section-photo:last-child {
+  padding-right: 0px;
 }
 /* Team */
 .team-section {
@@ -290,8 +291,9 @@ ul {
 }
 
 .activity {
-  padding-left: 60px;
+  padding-bottom: 30px;
   padding-top: 30px;
+  text-align: center;
 }
 .team-people-list {
   padding-bottom: 10px;
@@ -315,7 +317,6 @@ ul {
   border-radius: 0px 0px 4px 4px;
 }
 .team-job-title {
-  padding-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -329,7 +330,8 @@ ul {
 
 .footer {
   background-color: var(--bg-dark-clr);
-  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo:hover,
@@ -339,7 +341,6 @@ ul {
 
 .footer-logo {
   display: inline-block;
-  padding-top: 60px;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -367,11 +368,8 @@ ul {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.adress-list:last-child {
-  padding-bottom: 60px;
-}
+
 .adress-list {
-  padding-bottom: x;
   padding-top: 9px;
 }
 .footer-logo-section {
@@ -441,6 +439,9 @@ ul {
 }
 
 /* Project list */
+.project-photo {
+  display: block;
+}
 .project-list {
   display: flex;
   gap: 30px;
@@ -452,6 +453,7 @@ ul {
 .filtr-container {
   padding-top: 20px;
   padding-left: 24px;
+  padding-bottom: 20px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
@@ -471,5 +473,4 @@ ul {
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-  padding-bottom: 20px;
 }
